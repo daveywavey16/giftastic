@@ -6,6 +6,7 @@ function searchGif(gifName) {
             type: 'GET',
         })
         .done(function(response) {
+	        console.log(response);
             displayGif(response);
         })
 }
